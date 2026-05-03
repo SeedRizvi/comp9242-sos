@@ -1,0 +1,837 @@
+-- Found GCC with prefix aarch64-linux-gnu-
+-- Set platform details from PLATFORM=odroidc2
+--   KernelPlatform: odroidc2
+-- Setting from flags KernelSel4Arch: aarch64
+-- The C compiler identification is GNU 9.2.1
+-- Check for working C compiler: /home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc
+-- Check for working C compiler: /home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- The CXX compiler identification is GNU 9.2.1
+-- Check for working CXX compiler: /home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-g++
+-- Check for working CXX compiler: /home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-g++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/cs9242/crossdev/gcc-9-aarch64-none-linux-gnu/bin/aarch64-linux-gnu-gcc
+-- /tmp/tmp5lt_ne0m/build/kernel/gen_headers/plat/machine/devices_gen.h is out of date. Regenerating from DTB...
+-- CPIO test cpio_reproducible_flag PASSED
+-- Found musllibc: /tmp/tmp5lt_ne0m/projects/musllibc  
+-- Performing Test compiler_arch_test
+-- Performing Test compiler_arch_test - Success
+-- Looking for sys/filio.h
+-- Looking for sys/filio.h - not found
+-- Performing Test HAVE_SOCKADDR_LEN
+-- Performing Test HAVE_SOCKADDR_LEN - Failed
+-- Performing Test HAVE_SO_BINDTODEVICE
+-- Performing Test HAVE_SO_BINDTODEVICE - Failed
+-- Performing Test NO_LFS_REQUIRED
+-- Performing Test NO_LFS_REQUIRED - Failed
+-- Performing Test _FILE_OFFSET_BITS
+-- Performing Test _FILE_OFFSET_BITS - Failed
+-- Performing Test _LARGE_FILES
+-- Performing Test _LARGE_FILES - Failed
+-- Looking for makedev
+-- Looking for makedev - not found
+-- Looking for makedev
+-- Looking for makedev - not found
+-- Performing Test C_ACCEPTS_WALL
+-- Performing Test C_ACCEPTS_WALL - Success
+-- libmuslc architecture: 'aarch64' (from KernelSel4Arch 'aarch64')
+-- Detecting cached version of: musllibc
+--   No cache path given. Set SEL4_CACHE_DIR to a path to enable caching binary artifacts.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/tmp5lt_ne0m/build
+[1/242] Concatenating C files
+[2/242] Generate invocation header gen_headers/arch/api/sel4_invocation.h
+[3/242] Generate invocation header gen_headers/arch/api/invocation.h
+[4/242] Generate dummy headers for prune compilation
+[5/242] Generate invocation header gen_headers/api/invocation.h
+[6/242] Creating C input file for preprocessor
+[7/242] Creating C input file for preprocessor
+[8/242] Building C object libsel4/CMakeFiles/libsel4_shared_types_gen_pbf_temp_lib.dir/libsel4_shared_types_gen_pbf_temp.c.obj
+[9/242] Building C object libsel4/CMakeFiles/libsel4_sel4_arch_types_gen_pbf_temp_lib.dir/libsel4_sel4_arch_types_gen_pbf_temp.c.obj
+[10/242] Generating include/sel4/shared_types.pbf
+[11/242] Generating sel4_arch_include/aarch64/sel4/sel4_arch/types.pbf
+[12/242] Generating from /tmp/tmp5lt_ne0m/build/libsel4/include/sel4/shared_types.pbf
+[13/242] Generate syscall invocations
+[14/242] Creating C input file for preprocessor
+[15/242] Creating C input file for preprocessor
+[16/242] Generate sel4_client.h
+[17/242] Building C object kernel/CMakeFiles/kernel_bf_gen_target_1_pbf_temp_lib.dir/kernel_bf_gen_target_1_pbf_temp.c.obj
+[18/242] Generating generated/arch/object/structures.bf.pbf
+[19/242] Building C object kernel/CMakeFiles/kernel_all_pp_prune_wrapper_temp_lib.dir/kernel_all_pp_prune_wrapper_temp.c.obj
+[20/242] Generate syscall.h
+[21/242] Generating kernel_all_pp_prune.c
+[22/242] Generate invocation header include/sel4/invocation.h
+[23/242] Generating from generated/arch/object/structures.bf.pbf
+[24/242] Generate invocation header arch_include/arm/sel4/arch/invocation.h
+[25/242] Creating C input file for preprocessor
+[26/242] Building C object kernel/CMakeFiles/kernel_bf_gen_target_11_pbf_temp_lib.dir/kernel_bf_gen_target_11_pbf_temp.c.obj
+[27/242] Generating generated/sel4/shared_types.bf.pbf
+[28/242] Generating from /tmp/tmp5lt_ne0m/build/libsel4/sel4_arch_include/aarch64/sel4/sel4_arch/types.pbf
+[29/242] Generate invocation header sel4_arch_include/aarch64/sel4/sel4_arch/invocation.h
+[30/242] Building C object projects/libcpio/CMakeFiles/cpio.dir/src/cpio.c.obj
+[31/242] Linking C static library projects/libcpio/libcpio.a
+[32/242] Building C object libsel4/CMakeFiles/sel4.dir/src/sel4_bootinfo.c.obj
+[33/242] Generating from generated/sel4/shared_types.bf.pbf
+[34/242] Creating C input file for preprocessor
+[35/242] Linking C static library libsel4/libsel4.a
+[36/242] Building C object kernel/CMakeFiles/linker_ld_wrapper_temp_lib.dir/linker_ld_wrapper_temp.c.obj
+[37/242] Generating linker.lds_pp
+[38/242] Creating C input file for preprocessor
+[39/242] Building ASM object projects/sel4runtime/CMakeFiles/sel4runtime_crt_obj.dir/crt/sel4_arch/aarch64/crti.S.obj
+[40/242] Building C object kernel/CMakeFiles/kernel_i_wrapper_temp_lib.dir/kernel_all_copy.c.obj
+[41/242] Generating kernel_all.i
+[42/242] Building ASM object projects/sel4runtime/CMakeFiles/sel4runtime_crt_obj.dir/crt/sel4_arch/aarch64/crtn.S.obj
+[43/242] Building ASM object projects/sel4runtime/CMakeFiles/sel4runtime_crt_obj.dir/crt/sel4_arch/aarch64/crt0.S.obj
+[44/242] Generating circular_includes_valid
+[45/242] Building ASM object projects/sel4runtime/CMakeFiles/sel4runtime_crt_obj.dir/crt/sel4_arch/aarch64/sel4_crt0.S.obj
+[46/242] Building ASM object kernel/CMakeFiles/kernel.elf.dir/src/arch/arm/armv/armv8-a/64/machine_asm.S.obj
+[47/242] Building ASM object kernel/CMakeFiles/kernel.elf.dir/src/arch/arm/64/head.S.obj
+[48/242] Building ASM object kernel/CMakeFiles/kernel.elf.dir/src/arch/arm/64/traps.S.obj
+[49/242] Generating ../../lib/crt0.o, ../../lib/crti.o, ../../lib/crtn.o
+[50/242] Building ASM object projects/sel4runtime/CMakeFiles/sel4runtime.dir/crt/sel4_arch/aarch64/crti.S.obj
+[51/242] Building ASM object projects/sel4runtime/CMakeFiles/sel4runtime.dir/crt/sel4_arch/aarch64/crtn.S.obj
+[52/242] Building ASM object projects/sel4runtime/CMakeFiles/sel4runtime.dir/crt/sel4_arch/aarch64/crt0.S.obj
+[53/242] Building ASM object projects/sel4runtime/CMakeFiles/sel4runtime.dir/crt/sel4_arch/aarch64/sel4_crt0.S.obj
+[54/242] Building C object projects/sel4runtime/CMakeFiles/sel4runtime.dir/src/crt1.c.obj
+[55/242] Building C object projects/sel4runtime/CMakeFiles/sel4runtime.dir/src/start.c.obj
+[56/242] Building C object projects/sel4runtime/CMakeFiles/sel4runtime.dir/src/start_root.c.obj
+[57/242] Building C object projects/sel4runtime/CMakeFiles/sel4runtime.dir/src/env.c.obj
+[58/242] Building C object projects/sel4runtime/CMakeFiles/sel4runtime.dir/src/init.c.obj
+[59/242] Building C object projects/sel4runtime/CMakeFiles/sel4runtime.dir/src/memset.c.obj
+[60/242] Building C object projects/sel4runtime/CMakeFiles/sel4runtime.dir/src/memcpy.c.obj
+[61/242] Building C object projects/sel4runtime/CMakeFiles/sel4runtime.dir/src/vsyscall.c.obj
+[62/242] Linking C static library projects/sel4runtime/libsel4runtime.a
+[63/242] Building C object kernel/CMakeFiles/kernel.elf.dir/kernel_all.c.obj
+[64/242] Linking C executable kernel/kernel.elf
+[65/242] Invoking muslc build system
+[66/242] Building C object projects/aos/apps/console_test/CMakeFiles/console_test.dir/src/console_test.c.obj
+[67/242] Building C object projects/aos/apps/sosh/CMakeFiles/sosh.dir/src/benchmark.c.obj
+[68/242] Building C object projects/aos/apps/rust_fan/CMakeFiles/rust_fan.dir/src/rust_fan.c.obj
+[69/242] Building C object projects/aos/apps/sosh/CMakeFiles/sosh.dir/src/sosh.c.obj
+[70/242] Building C object projects/aos/apps/loopy/CMakeFiles/loopy.dir/src/loopy.c.obj
+[71/242] Building C object projects/aos/libaos/CMakeFiles/aos.dir/src/debug.c.obj
+[72/242] Building C object projects/aos/libaos/CMakeFiles/aos.dir/src/strerror.c.obj
+[73/242] Building C object projects/aos/libaos/CMakeFiles/aos.dir/src/vsyscall.c.obj
+[74/242] Building C object projects/aos/libclock/CMakeFiles/clock.dir/src/device.c.obj
+[75/242] Building C object projects/aos/libclock/CMakeFiles/clock.dir/src/clock.c.obj
+[76/242] Building C object projects/aos/libclock/CMakeFiles/clock.dir/src/clock_test.c.obj
+[77/242] Building C object projects/aos/libclock/CMakeFiles/clock.dir/src/timeouts.c.obj
+[78/242] Building C object projects/aos/libclock/CMakeFiles/clock.dir/src/timeouts_test.c.obj
+[79/242] Building C object projects/aos/libco/CMakeFiles/libco.dir/libco.c.obj
+[80/242] Building C object projects/aos/libco/CMakeFiles/libco.dir/aarch64.c.obj
+[81/242] Building C object projects/aos/libco/CMakeFiles/libco.dir/arm.c.obj
+[82/242] Linking C static library projects/aos/libco/liblibco.a
+[83/242] Building C object projects/aos/libethernet/CMakeFiles/ethernet.dir/src/unimplemented.c.obj
+[84/242] Building C object projects/aos/libethernet/CMakeFiles/ethernet.dir/src/ethernet.c.obj
+[85/242] Building C object projects/aos/libethernet/CMakeFiles/ethernet.dir/src/uboot/designware.c.obj
+[86/242] Building C object projects/aos/libethernet/CMakeFiles/ethernet.dir/src/uboot/phy.c.obj
+[87/242] Building C object projects/aos/libethernet/CMakeFiles/ethernet.dir/src/uboot/miiphyutil.c.obj
+[88/242] Building C object projects/aos/libethernet/CMakeFiles/ethernet.dir/src/uboot/realtek.c.obj
+[89/242] Building C object projects/aos/libsosapi/CMakeFiles/sosapi.dir/src/sos.c.obj
+[90/242] Building C object projects/aos/libsel4cspace/CMakeFiles/sel4cspace.dir/src/cspace.c.obj
+../projects/aos/libsel4cspace/src/cspace.c: In function ‘cspace_alloc_slot_nb’:
+../projects/aos/libsel4cspace/src/cspace.c:366:84: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  366 |         seL4_Word bot_index = bf_first_free(BITFIELD_SIZE(CNODE_SIZE_BITS), bot_lvl->bf);
+      |                                                                             ~~~~~~~^~~~
+../projects/aos/libsel4cspace/src/cspace.c:367:27: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  367 |         bf_set_bit(bot_lvl->bf, bot_index);
+      |                    ~~~~~~~^~~~
+../projects/aos/libsel4cspace/src/cspace.c:369:66: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  369 |         if (bf_first_free(BITFIELD_SIZE(CNODE_SIZE_BITS), bot_lvl->bf) >=
+      |                                                           ~~~~~~~^~~~
+../projects/aos/libsel4cspace/src/cspace.c: In function ‘cspace_free_slot_nb’:
+../projects/aos/libsel4cspace/src/cspace.c:418:70: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  418 |                 bf_clr_bit(cspace->bot_lvl_nodes[node]->cnodes[cnode].bf, BOT_LVL_INDEX(cptr));
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[91/242] Building C object projects/aos/libsosapi/CMakeFiles/sosapi.dir/src/sys_exit.c.obj
+[92/242] Building C object projects/aos/libsosapi/CMakeFiles/sosapi.dir/src/sys_morecore.c.obj
+[93/242] Building C object projects/aos/libsosapi/CMakeFiles/sosapi.dir/src/sys_stdio.c.obj
+[94/242] Building C object projects/aos/libsosapi/CMakeFiles/sosapi.dir/src/sys_thread.c.obj
+[95/242] Building C object projects/aos/libsosapi/CMakeFiles/sosapi.dir/src/sys_time.c.obj
+[96/242] Building C object projects/aos/libsosapi/CMakeFiles/sosapi.dir/src/vsyscall.c.obj
+[97/242] Building C object projects/libgdb/CMakeFiles/gdb.dir/src/util.c.obj
+[98/242] Building C object projects/libgdb/CMakeFiles/gdb.dir/src/gdb.c.obj
+[99/242] Building C object projects/libgdb/CMakeFiles/gdb.dir/src/printf.c.obj
+[100/242] Building C object libnfs/mount/CMakeFiles/core_mount.dir/libnfs-raw-mount.c.obj
+[101/242] Building C object projects/libgdb/CMakeFiles/gdb.dir/src/arch/arm/64/gdb.c.obj
+[102/242] Building C object libnfs/mount/CMakeFiles/core_mount.dir/mount.c.obj
+[103/242] Linking C static library projects/libgdb/libgdb.a
+[104/242] Linking C static library libnfs/mount/libcore_mount.a
+[105/242] Building C object libnfs/nfs/CMakeFiles/core_nfs.dir/nfs.c.obj
+[106/242] Building C object libnfs/nfs/CMakeFiles/core_nfs.dir/nfsacl.c.obj
+[107/242] Building C object libnfs/nfs/CMakeFiles/core_nfs.dir/libnfs-raw-nfs.c.obj
+[108/242] Building C object libnfs/nfs4/CMakeFiles/core_nfs4.dir/nfs4.c.obj
+[109/242] Linking C static library libnfs/nfs/libcore_nfs.a
+[110/242] Building C object libnfs/nlm/CMakeFiles/core_nlm.dir/libnfs-raw-nlm.c.obj
+[111/242] Building C object libnfs/nfs4/CMakeFiles/core_nfs4.dir/libnfs-raw-nfs4.c.obj
+[112/242] Building C object libnfs/nlm/CMakeFiles/core_nlm.dir/nlm.c.obj
+[113/242] Linking C static library libnfs/nfs4/libcore_nfs4.a
+[114/242] Linking C static library libnfs/nlm/libcore_nlm.a
+[115/242] Building C object libnfs/nsm/CMakeFiles/core_nsm.dir/libnfs-raw-nsm.c.obj
+[116/242] Building C object libnfs/nsm/CMakeFiles/core_nsm.dir/nsm.c.obj
+[117/242] Building C object libnfs/portmap/CMakeFiles/core_portmap.dir/libnfs-raw-portmap.c.obj
+[118/242] Linking C static library libnfs/nsm/libcore_nsm.a
+[119/242] Building C object libnfs/portmap/CMakeFiles/core_portmap.dir/portmap.c.obj
+[120/242] Building C object libnfs/rquota/CMakeFiles/core_rquota.dir/libnfs-raw-rquota.c.obj
+[121/242] Linking C static library libnfs/portmap/libcore_portmap.a
+[122/242] Building C object libnfs/rquota/CMakeFiles/core_rquota.dir/rquota.c.obj
+[123/242] Building C object libnfs/lib/CMakeFiles/nfs.dir/init.c.obj
+[124/242] Linking C static library libnfs/rquota/libcore_rquota.a
+[125/242] Building C object libnfs/lib/CMakeFiles/nfs.dir/libnfs.c.obj
+[126/242] Building C object libnfs/lib/CMakeFiles/nfs.dir/libnfs-zdr.c.obj
+[127/242] Building C object libnfs/lib/CMakeFiles/nfs.dir/libnfs-sync.c.obj
+[128/242] Building C object libnfs/lib/CMakeFiles/nfs.dir/pdu.c.obj
+[129/242] Building C object libnfs/lib/CMakeFiles/nfs.dir/socket.c.obj
+[130/242] Building C object libnfs/lib/CMakeFiles/nfs.dir/nfs_v4.c.obj
+[131/242] Building C object projects/libutils/CMakeFiles/utils.dir/src/arch/arm/stack.c.obj
+[132/242] Building C object libnfs/lib/CMakeFiles/nfs.dir/nfs_v3.c.obj
+[133/242] Linking C static library libnfs/lib/libnfs.a
+[134/242] Creating directories for 'picotcp_external'
+[135/242] Building C object projects/libutils/CMakeFiles/utils.dir/src/cbor64.c.obj
+[136/242] Building C object projects/libutils/CMakeFiles/utils.dir/src/debug.c.obj
+[137/242] Building C object projects/libutils/CMakeFiles/utils.dir/src/xml.c.obj
+[138/242] Building C object projects/libutils/CMakeFiles/utils.dir/src/list.c.obj
+[139/242] Performing download step for 'picotcp_external'
+[140/242] Building C object projects/libutils/CMakeFiles/utils.dir/src/zf_log.c.obj
+[141/242] No update step for 'picotcp_external'
+[142/242] Performing patch step for 'picotcp_external'
+[143/242] Linking C static library projects/libutils/libutils.a
+[144/242] No configure step for 'picotcp_external'
+[145/242] Linking C static library projects/aos/libaos/libaos.a
+[146/242] Linking C static library projects/aos/libclock/libclock.a
+[147/242] Linking C static library projects/aos/libsel4cspace/libsel4cspace.a
+[148/242] Linking C static library projects/aos/libethernet/libethernet.a
+[149/242] Linking C static library projects/aos/libsosapi/libsosapi.a
+[150/242] Linking C executable projects/aos/apps/console_test/console_test
+[151/242] Linking C executable projects/aos/apps/sosh/sosh
+[152/242] Linking C executable projects/aos/apps/rust_fan/rust_fan
+[153/242] Linking C executable projects/aos/apps/loopy/loopy
+[154/242] Performing build step for 'picotcp_external'
+modules/pico_ipv4.c: In function ‘mcast_group_update’:
+modules/pico_ipv4.c:723:26: warning: taking address of packed member of ‘struct pico_mcast_group’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  723 |         pico_tree_delete(&g->MCASTSources, source);
+      |                          ^~~~~~~~~~~~~~~~
+modules/pico_ipv4.c:736:38: warning: taking address of packed member of ‘struct pico_mcast_group’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  736 |                 if (pico_tree_insert(&g->MCASTSources, source)) {
+      |                                      ^~~~~~~~~~~~~~~~
+modules/pico_ipv4.c: In function ‘pico_ipv4_mcast_leave’:
+modules/pico_ipv4.c:836:34: warning: taking address of packed member of ‘struct pico_mcast_group’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  836 |                 pico_tree_delete(&g->MCASTSources, source);
+      |                                  ^~~~~~~~~~~~~~~~
+modules/pico_icmp4.c: In function ‘pico_icmp4_ping’:
+modules/pico_icmp4.c:384:34: warning: taking address of packed member of ‘struct pico_ip4’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  384 |     if (pico_string_to_ipv4(dst, (uint32_t *)&cookie->dst.addr) < 0) {
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+modules/pico_igmp.c: In function ‘pico_igmpv3_generate_report’:
+modules/pico_igmp.c:751:33: warning: cast increases required alignment of target type [-Wcast-align]
+  751 |         uint32_t *source_addr = (uint32_t *)((uint8_t *)record + sizeof(struct igmpv3_group_record));
+      |                                 ^
+modules/pico_dns_client.c: In function ‘pico_dns_client_add_ns’:
+modules/pico_dns_client.c:126:46: warning: taking address of packed member of ‘struct pico_ip4’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  126 |     pico_string_to_ipv4(PICO_DNS_NS_DEFAULT, (uint32_t *)&test.ns.addr);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+modules/pico_dns_client.c: In function ‘pico_dns_client_init’:
+modules/pico_dns_client.c:829:50: warning: taking address of packed member of ‘struct pico_ip4’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  829 |     if (pico_string_to_ipv4(PICO_DNS_NS_DEFAULT, (uint32_t *)&default_ns.addr) < 0)
+      |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+modules/pico_dns_common.c: In function ‘pico_dns_packet_compress_name’:
+modules/pico_dns_common.c:1522:25: warning: comparison between pointer and zero character constant [-Wpointer-compare]
+ 1522 |     while (lbl_iterator != '\0') {
+      |                         ^~
+modules/pico_dns_common.c:1522:12: note: did you mean to dereference the pointer?
+ 1522 |     while (lbl_iterator != '\0') {
+      |            ^
+modules/pico_mdns.c: In function ‘pico_mdns_send_packet’:
+modules/pico_mdns.c:1741:47: warning: taking address of packed member of ‘struct pico_ip4’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 1741 |     pico_string_to_ipv4(PICO_MDNS_DEST_ADDR4, &dst4.addr);
+      |                                               ^~~~~~~~~~
+modules/pico_mdns.c: In function ‘pico_mdns_init’:
+modules/pico_mdns.c:3640:50: warning: taking address of packed member of ‘struct pico_ip4’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 3640 |     if(pico_string_to_ipv4(PICO_MDNS_DEST_ADDR4, &mreq4.mcast_group_addr.ip4.addr)) {
+      |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+modules/pico_ipv6.c: In function ‘mcast_group_update_ipv6’:
+modules/pico_ipv6.c:1009:26: warning: taking address of packed member of ‘struct pico_mcast_group’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 1009 |         pico_tree_delete(&g->MCASTSources, source);
+      |                          ^~~~~~~~~~~~~~~~
+modules/pico_ipv6.c:1022:38: warning: taking address of packed member of ‘struct pico_mcast_group’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 1022 |                 if (pico_tree_insert(&g->MCASTSources, source)) {
+      |                                      ^~~~~~~~~~~~~~~~
+modules/pico_ipv6.c: In function ‘pico_ipv6_mcast_leave’:
+modules/pico_ipv6.c:1119:34: warning: taking address of packed member of ‘struct pico_mcast_group’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 1119 |                 pico_tree_delete(&g->MCASTSources, source);
+      |                                  ^~~~~~~~~~~~~~~~
+modules/pico_sntp_client.c: In function ‘dnsCallback’:
+modules/pico_sntp_client.c:291:46: warning: taking address of packed member of ‘struct pico_ip4’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  291 |             retval = pico_string_to_ipv4(ip, (uint32_t *)&address.ip4.addr);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+stack/pico_frame.c: In function ‘pico_frame_do_alloc’:
+stack/pico_frame.c:93:26: warning: cast increases required alignment of target type [-Wcast-align]
+   93 |         p->usage_count = (uint32_t *)(((uint8_t*)p->buffer) + frame_buffer_size);
+      |                          ^
+stack/pico_frame.c: In function ‘pico_frame_new_buffer’:
+stack/pico_frame.c:159:22: warning: cast increases required alignment of target type [-Wcast-align]
+  159 |     f->usage_count = (uint32_t *)(((uint8_t*)f->buffer) + frame_buffer_size);
+      |                      ^
+stack/pico_frame.c: In function ‘pico_checksum_adder’:
+stack/pico_frame.c:293:12: warning: cast increases required alignment of target type [-Wcast-align]
+  293 |     stop = (uint16_t *)(((uint8_t *)data) + len);
+      |            ^
+stack/pico_device.c: In function ‘pico_device_broadcast’:
+stack/pico_device.c:487:27: warning: operand of ?: changes signedness from ‘int’ to ‘uint32_t’ {aka ‘unsigned int’} due to unsignedness of other operand [-Wsign-compare]
+  487 |     ret = sent ? f->len : -1;
+      |                           ^~
+stack/pico_device.c:487:25: warning: unsigned conversion from ‘int’ to ‘uint32_t’ {aka ‘unsigned int’} changes value from ‘-1’ to ‘4294967295’ [-Wsign-conversion]
+  487 |     ret = sent ? f->len : -1;
+      |                         ^
+stack/pico_device.c:487:11: warning: conversion to ‘int32_t’ {aka ‘int’} from ‘uint32_t’ {aka ‘unsigned int’} may change the sign of the result [-Wsign-conversion]
+  487 |     ret = sent ? f->len : -1;
+      |           ^~~~
+stack/pico_device.c:487:11: warning: signed conversion from ‘uint32_t’ {aka ‘unsigned int’} to ‘int32_t’ {aka ‘int’} changes the value of ‘4294967295’ [-Wsign-conversion]
+-e 	[AR] /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a
+-e 	[RANLIB] /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a
+-e 	[KEEP SYMBOLS] /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a
+-e 	[LIBSIZE] 1667742	/tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a
+-e    text	   data	    bss	    dec	    hex	filename
+   8532	     80	    160	   8772	   2244	pico_aodv.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   7036	     24	     64	   7124	   1bd4	pico_arp.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+    596	      0	   1504	   2100	    834	pico_dev_loop.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  28346	      9	   3608	  31963	   7cdb	pico_dev_ppp.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  10736	    464	    132	  11332	   2c44	pico_dhcp_client.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   2000	      0	      0	   2000	    7d0	pico_dhcp_common.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   5784	     32	      0	   5816	   16b8	pico_dhcp_server.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   8387	     32	   1500	   9919	   26bf	pico_dns_client.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  15398	      0	      0	  15398	   3c26	pico_dns_common.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   4203	      0	      0	   4203	   106b	pico_dns_sd.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   4207	     88	     80	   4375	   1117	pico_ethernet.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   4268	     32	     16	   4316	   10dc	pico_fragments.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   1987	     16	      4	   2007	    7d7	pico_hotplug_detection.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   4695	    110	     84	   4889	   1319	pico_icmp4.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  10147	    106	     80	  10333	   285d	pico_icmp6.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  16492	    152	     80	  16724	   4154	pico_igmp.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   4392	     20	      0	   4412	   113c	pico_ipfilter.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  18901	    154	    102	  19157	   4ad5	pico_ipv4.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  24011	    136	     88	  24235	   5eab	pico_ipv6.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  11500	     20	     32	  11552	   2d20	pico_ipv6_nd.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  11292	      0	      0	  11292	   2c1c	pico_mcast.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  26949	     56	     37	  27042	   69a2	pico_mdns.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  15764	     64	      1	  15829	   3dd5	pico_mld.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   6416	     32	      8	   6456	   1938	pico_nat.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   3704	      0	     40	   3744	    ea0	pico_slaacv4.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   4368	      2	     40	   4410	   113a	pico_sntp_client.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   2967	      0	      0	   2967	    b97	pico_socket_tcp.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   2576	      0	      0	   2576	    a10	pico_socket_udp.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   1004	      0	      0	   1004	    3ec	pico_strings.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  44856	     88	     84	  45028	   afe4	pico_tcp.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  15039	    320	    544	  15903	   3e1f	pico_tftp.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   2928	     88	     80	   3096	    c18	pico_udp.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   4681	     16	     16	   4713	   1269	pico_device.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   3248	      0	      0	   3248	    cb0	pico_frame.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+    196	      0	      8	    204	     cc	pico_md5.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   2457	    160	      0	   2617	    a39	pico_protocol.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  21985	     32	     32	  22049	   5621	pico_socket.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  15300	     48	      0	  15348	   3bf4	pico_socket_multicast.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+  11248	     44	    288	  11580	   2d3c	pico_stack.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+   5192	     40	      0	   5232	   1470	pico_tree.o (ex /tmp/tmp5lt_ne0m/build/projects/libpicotcp/picotcp_external/picotcp/build/lib/libpicotcp.a)
+ 393788	   2465	   8712	 404965	  62de5	(TOTALS)
+[155/242] No install step for 'picotcp_external'
+[156/242] Completed 'picotcp_external'
+[157/242] Building C object projects/libelf/CMakeFiles/elf.dir/src/elf32.c.obj
+[158/242] Building C object projects/aos/libnetworkconsole/CMakeFiles/networkconsole.dir/src/networkconsole.c.obj
+../projects/aos/libnetworkconsole/src/networkconsole.c: In function ‘network_console_init’:
+../projects/aos/libnetworkconsole/src/networkconsole.c:72:45: warning: taking address of packed member of ‘struct pico_ip4’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   72 |     pico_string_to_ipv4(CONFIG_SOS_GATEWAY, &gateway.addr);
+      |                                             ^~~~~~~~~~~~~
+[159/242] Linking C static library projects/aos/libnetworkconsole/libnetworkconsole.a
+[160/242] Building C object projects/libelf/CMakeFiles/elf.dir/src/elf64.c.obj
+In file included from ../projects/libelf/include/elf/elf64.h:9,
+                 from ../projects/libelf/src/elf64.c:8:
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionNameOffset’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:88:20: note: in expansion of macro ‘NULL’
+   88 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionType’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uint32_t’ {aka ‘unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:102:20: note: in expansion of macro ‘NULL’
+  102 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionFlags’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:116:20: note: in expansion of macro ‘NULL’
+  116 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionAddr’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uintptr_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:130:20: note: in expansion of macro ‘NULL’
+  130 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionOffset’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:144:20: note: in expansion of macro ‘NULL’
+  144 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionSize’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:158:20: note: in expansion of macro ‘NULL’
+  158 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionLink’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uint32_t’ {aka ‘unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:172:20: note: in expansion of macro ‘NULL’
+  172 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionInfo’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uint32_t’ {aka ‘unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:186:20: note: in expansion of macro ‘NULL’
+  186 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionAddrAlign’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:200:20: note: in expansion of macro ‘NULL’
+  200 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionEntrySize’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:214:20: note: in expansion of macro ‘NULL’
+  214 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderType’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uint32_t’ {aka ‘unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:230:20: note: in expansion of macro ‘NULL’
+  230 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderOffset’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:244:20: note: in expansion of macro ‘NULL’
+  244 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderVaddr’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uintptr_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:258:20: note: in expansion of macro ‘NULL’
+  258 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderPaddr’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uintptr_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:272:20: note: in expansion of macro ‘NULL’
+  272 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderFileSize’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:286:20: note: in expansion of macro ‘NULL’
+  286 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderMemorySize’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:300:20: note: in expansion of macro ‘NULL’
+  300 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderFlags’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uint32_t’ {aka ‘unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:314:20: note: in expansion of macro ‘NULL’
+  314 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderAlign’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:328:20: note: in expansion of macro ‘NULL’
+  328 |             return NULL;
+      |                    ^~~~
+[161/242] Building C object projects/libelf/CMakeFiles/elf.dir/src/elf.c.obj
+In file included from ../projects/libelf/include/elf/elf64.h:9,
+                 from ../projects/libelf/src/elf.c:9:
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionNameOffset’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:88:20: note: in expansion of macro ‘NULL’
+   88 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionType’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uint32_t’ {aka ‘unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:102:20: note: in expansion of macro ‘NULL’
+  102 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionFlags’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:116:20: note: in expansion of macro ‘NULL’
+  116 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionAddr’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uintptr_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:130:20: note: in expansion of macro ‘NULL’
+  130 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionOffset’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:144:20: note: in expansion of macro ‘NULL’
+  144 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionSize’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:158:20: note: in expansion of macro ‘NULL’
+  158 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionLink’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uint32_t’ {aka ‘unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:172:20: note: in expansion of macro ‘NULL’
+  172 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionInfo’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uint32_t’ {aka ‘unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:186:20: note: in expansion of macro ‘NULL’
+  186 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionAddrAlign’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:200:20: note: in expansion of macro ‘NULL’
+  200 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getSectionEntrySize’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:214:20: note: in expansion of macro ‘NULL’
+  214 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderType’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uint32_t’ {aka ‘unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:230:20: note: in expansion of macro ‘NULL’
+  230 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderOffset’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:244:20: note: in expansion of macro ‘NULL’
+  244 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderVaddr’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uintptr_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:258:20: note: in expansion of macro ‘NULL’
+  258 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderPaddr’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uintptr_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:272:20: note: in expansion of macro ‘NULL’
+  272 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderFileSize’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:286:20: note: in expansion of macro ‘NULL’
+  286 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderMemorySize’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:300:20: note: in expansion of macro ‘NULL’
+  300 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderFlags’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘uint32_t’ {aka ‘unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:314:20: note: in expansion of macro ‘NULL’
+  314 |             return NULL;
+      |                    ^~~~
+../projects/libelf/include/elf/elf64.h: In function ‘elf64_getProgramHeaderAlign’:
+projects/musllibc/build-temp/stage/include/stdlib.h:13:14: warning: returning ‘void *’ from a function with return type ‘size_t’ {aka ‘long unsigned int’} makes integer from pointer without a cast [-Wint-conversion]
+   13 | #define NULL ((void*)0)
+      |              ^
+../projects/libelf/include/elf/elf64.h:328:20: note: in expansion of macro ‘NULL’
+  328 |             return NULL;
+      |                    ^~~~
+../projects/libelf/src/elf.c: In function ‘elf_getStringTable’:
+../projects/libelf/src/elf.c:137:29: warning: passing argument 1 of ‘free’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  137 |         if (elf->read) free(string_table);
+      |                             ^~~~~~~~~~~~
+In file included from ../projects/libelf/include/elf/elf64.h:9,
+                 from ../projects/libelf/src/elf.c:9:
+projects/musllibc/build-temp/stage/include/stdlib.h:41:12: note: expected ‘void *’ but argument is of type ‘const char *’
+   41 | void free (void *);
+      |            ^~~~~~
+../projects/libelf/src/elf.c:142:29: warning: passing argument 1 of ‘free’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  142 |         if (elf->read) free(string_table);
+      |                             ^~~~~~~~~~~~
+In file included from ../projects/libelf/include/elf/elf64.h:9,
+                 from ../projects/libelf/src/elf.c:9:
+projects/musllibc/build-temp/stage/include/stdlib.h:41:12: note: expected ‘void *’ but argument is of type ‘const char *’
+   41 | void free (void *);
+      |            ^~~~~~
+../projects/libelf/src/elf.c:148:29: warning: passing argument 1 of ‘free’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  148 |         if (elf->read) free(string_table);
+      |                             ^~~~~~~~~~~~
+In file included from ../projects/libelf/include/elf/elf64.h:9,
+                 from ../projects/libelf/src/elf.c:9:
+projects/musllibc/build-temp/stage/include/stdlib.h:41:12: note: expected ‘void *’ but argument is of type ‘const char *’
+   41 | void free (void *);
+      |            ^~~~~~
+../projects/libelf/src/elf.c: In function ‘free_section_name’:
+../projects/libelf/src/elf.c:190:14: warning: passing argument 1 of ‘free’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  190 |     free(str - offset);
+      |          ~~~~^~~~~~~~
+In file included from ../projects/libelf/include/elf/elf64.h:9,
+                 from ../projects/libelf/src/elf.c:9:
+projects/musllibc/build-temp/stage/include/stdlib.h:41:12: note: expected ‘void *’ but argument is of type ‘const char *’
+   41 | void free (void *);
+      |            ^~~~~~
+../projects/libelf/src/elf.c: In function ‘elf_getSectionNamed’:
+../projects/libelf/src/elf.c:197:27: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  197 |         char *temp_name = elf_getSectionName(elfFile, i);
+      |                           ^~~~~~~~~~~~~~~~~~
+[162/242] Building C object projects/libpicotcp/CMakeFiles/picotcp_bsd.dir/__/picotcp-bsd/pico_osal_noos.c.obj
+[163/242] Linking C static library projects/libelf/libelf.a
+[164/242] Building C object projects/libpicotcp/CMakeFiles/picotcp_bsd.dir/__/picotcp-bsd/pico_bsd_sockets.c.obj
+../projects/picotcp-bsd/pico_bsd_sockets.c: In function ‘pico_join_multicast_group’:
+../projects/picotcp-bsd/pico_bsd_sockets.c:760:34: warning: taking address of packed member of ‘struct pico_ip4’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  760 |     pico_string_to_ipv4(address, &mreq.mcast_group_addr.ip4.addr);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../projects/picotcp-bsd/pico_bsd_sockets.c:761:32: warning: taking address of packed member of ‘struct pico_ip4’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  761 |     pico_string_to_ipv4(local, &mreq.mcast_link_addr.ip4.addr);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[165/242] Linking C static library projects/libpicotcp/libpicotcp_bsd.a
+[166/242] Generate CPIO archive archive.o
+[167/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/dma.c.obj
+[168/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/elf.c.obj
+[169/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/bootstrap.c.obj
+../projects/aos/sos/src/bootstrap.c: In function ‘sos_bootstrap’:
+../projects/aos/sos/src/bootstrap.c:463:56: warning: taking address of packed member of ‘struct <anonymous>’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  463 |         bf_set_bit(bot_lvl_node->cnodes[CNODE_INDEX(i)].bf, BOT_LVL_INDEX(i));
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[170/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/frame_table.c.obj
+../projects/aos/sos/src/frame_table.c: In function ‘alloc_fresh_frame’:
+../projects/aos/sos/src/frame_table.c:362:46: warning: unused parameter ‘pt’ [-Wunused-parameter]
+  362 | static frame_t *alloc_fresh_frame(pt_meta_t *pt)
+      |                                   ~~~~~~~~~~~^~
+In file included from ../projects/aos/sos/src/frame_table.c:19:
+../projects/aos/sos/src/frame_table.c: In function ‘frame_pin’:
+../projects/aos/sos/src/frame_table.c:491:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  491 |     assert(pin_count <= CONFIG_SOS_FRAME_LIMIT || CONFIG_SOS_FRAME_LIMIT == 0); // TODO: Handle gracefully (wait system) or less gracefully (crash process).
+      |                      ^~
+projects/musllibc/build-temp/stage/include/assert.h:8:28: note: in definition of macro ‘assert’
+    8 | #define assert(x) ((void)((x) || (__assert_fail(#x, __FILE__, __LINE__, __func__),0)))
+      |                            ^
+[171/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/irq.c.obj
+[172/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/main.c.obj
+In file included from ../projects/libutils/include/utils/util.h:47,
+                 from ../projects/aos/sos/src/main.c:13:
+../projects/aos/sos/src/main.c: In function ‘handle_fault’:
+../projects/aos/sos/src/main.c:101:21: warning: format ‘%p’ expects argument of type ‘void *’, but argument 7 has type ‘uintptr_t’ {aka ‘long unsigned int’} [-Wformat=]
+  101 |             ZF_LOGI("VM fault at vaddr = %p\n", vaddr);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~
+      |                                                 |
+      |                                                 uintptr_t {aka long unsigned int}
+../projects/libutils/include/utils/zf_log.h:302:18: note: in definition of macro ‘_ZF_LOG_IMP’
+  302 |        lvl, tag, __VA_ARGS__); \
+      |                  ^~~~~~~~~~~
+../projects/aos/sos/src/main.c:101:13: note: in expansion of macro ‘ZF_LOGI’
+  101 |             ZF_LOGI("VM fault at vaddr = %p\n", vaddr);
+      |             ^~~~~~~
+../projects/aos/sos/src/main.c:101:43: note: format string is defined here
+  101 |             ZF_LOGI("VM fault at vaddr = %p\n", vaddr);
+      |                                          ~^
+      |                                           |
+      |                                           void *
+      |                                          %ld
+[173/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/mapping.c.obj
+[174/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/ut.c.obj
+[175/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/tests.c.obj
+[176/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/sys/backtrace.c.obj
+[177/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/network.c.obj
+[178/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/sys/morecore.c.obj
+[179/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/sys/exit.c.obj
+[180/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/sys/thread.c.obj
+[181/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/sys/time.c.obj
+[182/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/sys/stdio.c.obj
+[183/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/drivers/uart.c.obj
+[184/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/debugger.c.obj
+[185/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/threads.c.obj
+../projects/aos/sos/src/threads.c: In function ‘thread_trampoline’:
+../projects/aos/sos/src/threads.c:94:94: warning: unused parameter ‘debugger_add’ [-Wunused-parameter]
+   94 | static void thread_trampoline(sos_thread_t *thread, thread_main_f *function, void *arg, bool debugger_add)
+[186/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/utils.c.obj
+[187/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/netcon.c.obj
+[188/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/serverside.c.obj
+../projects/aos/sos/src/serverside.c: In function ‘handle_read_thread’:
+../projects/aos/sos/src/serverside.c:403:54: warning: passing argument 2 of ‘buffer_range_check’ makes pointer from integer without a cast [-Wint-conversion]
+  403 |     if (!buffer_range_check(read_args->pid, read_args->usr_buf, read_args->nbyte, false)) {
+      |                                             ~~~~~~~~~^~~~~~~~~
+      |                                                      |
+      |                                                      uintptr_t {aka long unsigned int}
+../projects/aos/sos/src/serverside.c:191:40: note: expected ‘char *’ but argument is of type ‘uintptr_t’ {aka ‘long unsigned int’}
+  191 | bool buffer_range_check(int pid, char *buf, size_t nbyte, bool write_to) {
+      |                                  ~~~~~~^~~
+../projects/aos/sos/src/serverside.c: In function ‘handle_write_thread’:
+../projects/aos/sos/src/serverside.c:473:56: warning: passing argument 2 of ‘buffer_range_check’ makes pointer from integer without a cast [-Wint-conversion]
+  473 |     if (!buffer_range_check(write_args->pid, write_args->usr_buf, write_args->nbyte, true)) {
+      |                                              ~~~~~~~~~~^~~~~~~~~
+      |                                                        |
+      |                                                        uintptr_t {aka long unsigned int}
+../projects/aos/sos/src/serverside.c:191:40: note: expected ‘char *’ but argument is of type ‘uintptr_t’ {aka ‘long unsigned int’}
+  191 | bool buffer_range_check(int pid, char *buf, size_t nbyte, bool write_to) {
+      |                                  ~~~~~~^~~
+../projects/aos/sos/src/serverside.c: In function ‘handle_dirent_thread’:
+../projects/aos/sos/src/serverside.c:531:58: warning: passing argument 2 of ‘buffer_range_check’ makes pointer from integer without a cast [-Wint-conversion]
+  531 |     if (!buffer_range_check(dirent_args->pid, dirent_args->usr_buf, dirent_args->nbyte, false)) {
+      |                                               ~~~~~~~~~~~^~~~~~~~~
+      |                                                          |
+      |                                                          uintptr_t {aka long unsigned int}
+../projects/aos/sos/src/serverside.c:191:40: note: expected ‘char *’ but argument is of type ‘uintptr_t’ {aka ‘long unsigned int’}
+  191 | bool buffer_range_check(int pid, char *buf, size_t nbyte, bool write_to) {
+      |                                  ~~~~~~^~~
+[189/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/filesystem.c.obj
+[190/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/files.c.obj
+[191/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/vmem.c.obj
+In file included from ../projects/libutils/include/utils/util.h:47,
+                 from ../projects/aos/sos/src/bootstrap.h:15,
+                 from ../projects/aos/sos/src/frame_table.h:14,
+                 from ../projects/aos/sos/src/vmem.h:27,
+                 from ../projects/aos/sos/src/vmem.c:1:
+../projects/aos/sos/src/vmem.c: In function ‘vm_fault_logic’:
+../projects/aos/sos/src/vmem.c:500:13: warning: format ‘%p’ expects argument of type ‘void *’, but argument 7 has type ‘uintptr_t’ {aka ‘long unsigned int’} [-Wformat=]
+  500 |     ZF_LOGE("\tInvalid vaddr %p\n", vaddr);
+      |             ^~~~~~~~~~~~~~~~~~~~~~  ~~~~~
+      |                                     |
+      |                                     uintptr_t {aka long unsigned int}
+../projects/libutils/include/utils/zf_log.h:302:18: note: in definition of macro ‘_ZF_LOG_IMP’
+  302 |        lvl, tag, __VA_ARGS__); \
+      |                  ^~~~~~~~~~~
+../projects/aos/sos/src/vmem.c:500:5: note: in expansion of macro ‘ZF_LOGE’
+  500 |     ZF_LOGE("\tInvalid vaddr %p\n", vaddr);
+      |     ^~~~~~~
+../projects/aos/sos/src/vmem.c:500:31: note: format string is defined here
+  500 |     ZF_LOGE("\tInvalid vaddr %p\n", vaddr);
+      |                              ~^
+      |                               |
+      |                               void *
+      |                              %ld
+[192/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/pagefile.c.obj
+[193/242] Building C object projects/aos/sos/CMakeFiles/sos.dir/src/process.c.obj
+../projects/aos/sos/src/process.c: In function ‘free_elf_file’:
+../projects/aos/sos/src/process.c:598:22: warning: passing argument 1 of ‘free’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  598 |         free(elf_file->elfFile);
+      |              ~~~~~~~~^~~~~~~~~
+In file included from ../projects/libutils/include/utils/auto.h:11,
+                 from ../projects/libutils/include/utils/util.h:18,
+                 from ../projects/aos/libaos/include/aos/registers.h:16,
+                 from ../projects/aos/libaos/include/aos/debug.h:19,
+                 from ../projects/aos/sos/src/process.c:3:
+projects/musllibc/build-temp/stage/include/stdlib.h:41:12: note: expected ‘void *’ but argument is of type ‘const void *’
+   41 | void free (void *);
+      |            ^~~~~~
+[194/242] Linking C executable projects/aos/sos/sos
+[195/242] Generate CPIO archive archive.o
+[196/242] Generating gen_headers/image_start_addr.h, gen_headers/platform_info.h
+[197/242] Generating linker.lds_pp
+[198/242] Generating gen_headers/devices_gen.h
+[199/242] Building ASM object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/64/crt0.S.obj
+[200/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/64/cpuid.c.obj
+[201/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/64/debug.c.obj
+[202/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/64/structures.c.obj
+[203/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/64/mmu.c.obj
+[204/242] Building ASM object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/64/traps.S.obj
+[205/242] Building ASM object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/armv/armv8-a/64/mmu-hyp.S.obj
+[206/242] Building ASM object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/armv/armv8-a/64/mmu.S.obj
+[207/242] Building ASM object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/armv/armv8-a/64/psci_asm.S.obj
+[208/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/drivers/smp-imx6.c.obj
+[209/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/armv/armv8-a/64/smp.c.obj
+[210/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/cpuid.c.obj
+[211/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/drivers/smp-psci.c.obj
+[212/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/drivers/smp-zynq7000.c.obj
+[213/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/psci.c.obj
+[214/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/scu.c.obj
+[215/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/smp_boot.c.obj
+[216/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/arch-arm/sys_boot.c.obj
+[217/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/binaries/elf/elf.c.obj
+[218/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/binaries/elf/elf64.c.obj
+[219/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/binaries/elf/elf32.c.obj
+[220/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/defaults.c.obj
+[221/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/common.c.obj
+[222/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/driver.c.obj
+[223/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/smp/common.c.obj
+[224/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/timer/arm_generic_timer.c.obj
+[225/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/uart/8250-uart.c.obj
+[226/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/uart/bcm-uart.c.obj
+[227/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/uart/common.c.obj
+[228/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/uart/exynos-uart.c.obj
+[229/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/uart/imx-lpuart.c.obj
+[230/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/uart/imx-uart.c.obj
+[231/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/uart/meson-uart.c.obj
+[232/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/uart/msm-uart.c.obj
+[233/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/uart/xilinx-uart.c.obj
+[234/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/fdt.c.obj
+[235/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/drivers/uart/pl011-uart.c.obj
+[236/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/string.c.obj
+[237/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/printf.c.obj
+[238/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/utils/crypt_md5.c.obj
+[239/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/utils/crypt_sha256.c.obj
+[240/242] Building C object elfloader-tool/CMakeFiles/elfloader.dir/src/utils/hash.c.obj
+[241/242] Linking C executable elfloader-tool/elfloader
+[242/242] Generating ../../../images/sos-image-arm-odroidc2
